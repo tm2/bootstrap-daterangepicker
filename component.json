@@ -1,0 +1,20 @@
+{
+  "name": "daterangepicker",
+  "repo": "tm2/bootstrap-daterangepicker",
+  "description": "a date range picker component",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {
+    "component/jquery": "*",
+    "component/moment": "*"
+  },
+  "development": {},
+  "scripts": [
+    "daterangepicker.js",
+  ],
+  "styles": [
+    "daterangepicker-bs2.css",
+    "daterangepicker-bs3.css"
+  ],
+  "license": "MIT"
+}
