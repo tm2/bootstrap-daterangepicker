@@ -10,7 +10,7 @@
   },
   "development": {},
   "scripts": [
-    "daterangepicker.js",
+    "daterangepicker.js"
   ],
   "styles": [
     "daterangepicker-bs2.css",
