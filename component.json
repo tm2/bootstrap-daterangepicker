@@ -1,5 +1,5 @@
 {
-  "name": "daterangepicker",
+  "name": "bootstrap-daterangepicker",
   "repo": "tm2/bootstrap-daterangepicker",
   "description": "a date range picker component",
   "version": "0.0.1",
@@ -10,7 +10,7 @@
   },
   "development": {},
   "scripts": [
-    "daterangepicker.js"
+    "index.js"
   ],
   "styles": [
     "daterangepicker-bs2.css",
