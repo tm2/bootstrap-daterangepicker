@@ -19,7 +19,6 @@ var DateRangePicker = function (element, options, cb) {
     var localeObject;
 
     //option defaults
-
     this.startDate = moment().startOf('day');
     this.endDate = moment().startOf('day');
     this.minDate = false;
@@ -113,6 +112,10 @@ var DateRangePicker = function (element, options, cb) {
     this.parentEl = (hasOptions && options.parentEl && $(options.parentEl)) || $(this.parentEl);
     //the date range picker
     this.container = $(DRPTemplate).appendTo(this.parentEl);
+    
+    this.element.on({
+        remove: $.proxy(this.dispose, this)
+    });
 
     if (hasOptions) {
 
@@ -426,6 +429,10 @@ DateRangePicker.prototype = {
         $(document).off('mousedown', this.hide);
         this.element.trigger('hidden', { picker: this });
     },
+
+    dispose: function(e) {
+        this.container.remove()
+    }
 
     enterRange: function (e) {
         var label = e.target.innerHTML;
