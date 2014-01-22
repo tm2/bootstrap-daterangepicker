@@ -431,8 +431,8 @@ DateRangePicker.prototype = {
     },
 
     dispose: function(e) {
-        this.container.remove()
-    }
+        this.container.remove();
+    },
 
     enterRange: function (e) {
         var label = e.target.innerHTML;
