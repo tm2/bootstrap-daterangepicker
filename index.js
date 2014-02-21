@@ -10,7 +10,7 @@
 
 var moment = require('moment');
 var $ = require('jquery')
-var hookup = require('lib/hookup_helper');
+var hookup = require('./lib/hookup_helper');
 
 module.exports = DateRangePicker;
 module.exports.hookup = hookup;
