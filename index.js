@@ -877,4 +877,4 @@ $.fn.daterangepicker = function (options, cb) {
 };
 
 module.exports = DateRangePicker;
-module.exports.hookup = hookup;
+module.exports.hookup = hookup.hooker;
