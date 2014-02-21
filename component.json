@@ -10,7 +10,8 @@
   },
   "development": {},
   "scripts": [
-    "index.js"
+    "index.js",
+    "lib/hookup_helper.js"
   ],
   "styles": [
     "daterangepicker-bs2.css",
