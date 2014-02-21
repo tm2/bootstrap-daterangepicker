@@ -12,10 +12,6 @@ var moment = require('moment');
 var $ = require('jquery')
 var hookup = require('./lib/hookup_helper');
 
-module.exports = DateRangePicker;
-module.exports.hookup = hookup;
-
-
 var DateRangePicker = function (element, options, cb) {
     var hasOptions = typeof options == 'object';
     var localeObject;
@@ -880,3 +876,5 @@ $.fn.daterangepicker = function (options, cb) {
     return this;
 };
 
+module.exports = DateRangePicker;
+module.exports.hookup = hookup;
