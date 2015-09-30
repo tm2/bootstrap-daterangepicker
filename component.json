@@ -6,7 +6,7 @@
   "keywords": [],
   "dependencies": {
     "component/jquery": "*",
-    "component/moment": "*"
+    "moment/moment": "*"
   },
   "development": {},
   "scripts": [
