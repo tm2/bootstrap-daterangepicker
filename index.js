@@ -8,7 +8,7 @@
 */
 
 
-var moment = require('moment');
+var Moment = require('moment');
 var $ = require('jquery')
 var hookup = require('./lib/hookup_helper');
 
@@ -17,8 +17,8 @@ var DateRangePicker = function (element, options, cb) {
     var localeObject;
 
     //option defaults
-    this.startDate = moment().startOf('day');
-    this.endDate = moment().startOf('day');
+    this.startDate = Moment().startOf('day');
+    this.endDate = Moment().startOf('day');
     this.minDate = false;
     this.maxDate = false;
     this.dateLimit = false;
@@ -45,8 +45,8 @@ var DateRangePicker = function (element, options, cb) {
         toLabel: 'To',
         weekLabel: 'W',
         customRangeLabel: 'Custom Range',
-        daysOfWeek: moment()._lang._weekdaysMin.slice(),
-        monthNames: moment()._lang._monthsShort.slice(),
+        daysOfWeek: Moment()._locale.__proto__._weekdaysMin,
+        monthNames: Moment()._locale.__proto__._monthsShort,
         firstDay: 0
     };
 
